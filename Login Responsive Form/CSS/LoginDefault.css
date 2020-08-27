@@ -5,6 +5,15 @@ html {
 body {
   width: 100vw;
   height: 100vh;
+  background-image: url("../BACKGROUND/backgroundBody2.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-backdrop-filter: blur(1px) invert(0);
+          backdrop-filter: blur(1px) invert(0);
+}
+
+.login-container {
   background-image: url("../BACKGROUND/background.svg");
   background-size: cover;
   background-position: center;
