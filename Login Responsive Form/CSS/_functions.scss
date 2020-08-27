@@ -1,0 +1,39 @@
+@mixin dimensions($width, $height){
+    width:$width;
+    height:$height;
+}
+@mixin flex($direction, $justify, $align){
+    display:flex;
+    flex-direction:$direction;
+    justify-content:$justify;
+    align-items:$align;
+}
+
+@mixin font($font, $size, $weight, $spacing, $style, $variant, $color){
+    font-family:$font, sans-serif;
+    font-size:$size;
+    font-weight:$weight;
+    letter-spacing:$spacing;
+    font-style:$style;
+    font-variant:$variant;
+    color:$color;
+}
+
+@mixin background($image, $size, $position, $repeat, $filter){
+    background-image:url($image);
+    background-size:$size;
+    background-position:$position;
+    background-repeat:$repeat;
+    backdrop-filter:$filter;
+}
+
+@mixin border($tam, $type, $color){
+    border:$tam $type $color;
+}
+
+@mixin borderAllSides($tam, $colorTop, $colorRight, $colorBottom, $colorLeft){
+    border-top:$tam $type $colorTop;
+    border-right:$tam $type $colorRight;
+    border-bottom:$tam $type $colorBottom;
+    border-left:$tam $type $colorLeft;
+}

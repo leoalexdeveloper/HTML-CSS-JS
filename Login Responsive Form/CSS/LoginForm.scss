@@ -1,0 +1,132 @@
+@import "_face-font.scss";
+@import "_functions.scss";
+
+
+
+.login-container{
+    @include dimensions(100vw, 100vh);
+    @include flex(column, center, center);
+
+    form{
+        @include dimensions(350px, 450px);
+        @include flex(column, space-around, center);
+        background-color:rgba(26,26,26,0.8);
+        box-shadow:0px 0px 2.5px 1px black, inset 0px 0px 2.5px 1px white;
+        
+
+        section{
+            @include flex(column, center, center);
+            overflow:hidden;
+
+            header{
+                @include dimensions(100%, 100%);
+                @include flex(column, center, center);
+            }
+
+            main{
+                @include dimensions(100%, 100%);
+                @include flex(column, center, center);
+
+                article{
+                    @include dimensions(100%, 50%);
+                    @include flex(row, center, center);
+
+                img{
+                    @include dimensions(20%, 100%);
+                    @include flex(column, center, center);
+                    filter:invert(1);
+                    transform:scale(0.4);
+                }
+
+                div{
+                    @include dimensions(60%, 100%);
+                    @include flex(row, center, center);
+                    position:relative;
+
+                    span{
+                        @include dimensions(100%, 50%);
+                        @include flex(row, flex-start, center);
+                        position:absolute;
+                        @include font(login-input, 1.2rem, normal, 2px, normal, normal, #229479);
+                        margin-left:4%;
+                    }
+
+                    input{
+                        @include dimensions(100%, 50%);
+                        @include flex(row, center, center);
+                        position:absolute;
+                        border:none;
+                        border-bottom:1px solid #E5E5E5;
+                        outline:none;
+                        @include font(login-input, 1.2rem, normal, 2px, normal, normal, #B0830B);
+                        background-color:transparent;
+                        padding-left:2%;
+                    }
+                }
+                }
+            }
+
+            footer{
+                @include dimensions(100%, 100%);
+                        @include flex(column, center, center);
+
+                        article{
+                            @include dimensions(100%, 100%);
+                            @include flex(column, space-around, center);
+
+                        input{
+                            @include dimensions(100%, 33%);
+                            @include flex(column, center, center);
+                            text-align:center;
+                            border:none;
+                            border-top:1px solid #E5E5E5;
+                            border-bottom:1px solid #E5E5E5;
+                            background-color:#E5E5E5;
+                            @include font(login-input, 1rem, normal, 2px, normal, normal, #229479);
+                            cursor:pointer;
+
+                            &:hover{
+                                background-color:#229479;
+                                color:#E5E5E5;
+                            }
+                        }
+
+                        div{
+                            @include dimensions(100%, 10%);
+                            @include flex(row, center, center);
+
+                            span{
+                                
+                            @include flex(column, center, center);
+                            padding-left:2%;
+                            @include font(login-input, 0.8rem, normal, 2px, normal, normal, #229479);
+                            }
+
+                            span:nth-child(1){
+                                @include font(login-input, 0.8rem, normal, 2px, normal, normal, #E5E5E5);
+                            }
+
+                            span:nth-child(2){
+                                @include font(login-input, 0.8rem, normal, 2px, normal, normal, #E5E5E5);
+                                cursor:pointer;
+
+                                &:hover{
+                                    color:#B0830B;
+                                }
+                            }
+                        }
+                        }
+            }
+        }
+
+        section:nth-child(1){
+            @include dimensions(100%, 20%);
+        }
+        section:nth-child(2){
+            @include dimensions(100%, 30%);
+        }
+        section:nth-child(3){
+            @include dimensions(100%, 30%);
+        }
+    }
+}

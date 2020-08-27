@@ -1,0 +1,381 @@
+@font-face {
+  font-family: login-button;
+  src: url("../FONTS/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: login-input;
+  src: url("../FONTS/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: login-forgot;
+  src: url("../FONTS/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: login-forgot-click;
+  src: url("../FONTS/Oswald-VariableFont_wght.ttf");
+}
+
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container form {
+  width: 350px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(26, 26, 26, 0.8);
+  -webkit-box-shadow: 0px 0px 2.5px 1px black, inset 0px 0px 2.5px 1px white;
+          box-shadow: 0px 0px 2.5px 1px black, inset 0px 0px 2.5px 1px white;
+}
+
+.login-container form section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.login-container form section header {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container form section main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container form section main article {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container form section main article img {
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+
+.login-container form section main article div {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.login-container form section main article div span {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  font-family: login-input, sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-variant: normal;
+  color: #229479;
+  margin-left: 4%;
+}
+
+.login-container form section main article div input {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  border: none;
+  border-bottom: 1px solid #E5E5E5;
+  outline: none;
+  font-family: login-input, sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-variant: normal;
+  color: #B0830B;
+  background-color: transparent;
+  padding-left: 2%;
+}
+
+.login-container form section footer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container form section footer article {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container form section footer article input {
+  width: 100%;
+  height: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: none;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  background-color: #E5E5E5;
+  font-family: login-input, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-variant: normal;
+  color: #229479;
+  cursor: pointer;
+}
+
+.login-container form section footer article input:hover {
+  background-color: #229479;
+  color: #E5E5E5;
+}
+
+.login-container form section footer article div {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container form section footer article div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2%;
+  font-family: login-input, sans-serif;
+  font-size: 0.8rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-variant: normal;
+  color: #229479;
+}
+
+.login-container form section footer article div span:nth-child(1) {
+  font-family: login-input, sans-serif;
+  font-size: 0.8rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-variant: normal;
+  color: #E5E5E5;
+}
+
+.login-container form section footer article div span:nth-child(2) {
+  font-family: login-input, sans-serif;
+  font-size: 0.8rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-variant: normal;
+  color: #E5E5E5;
+  cursor: pointer;
+}
+
+.login-container form section footer article div span:nth-child(2):hover {
+  color: #B0830B;
+}
+
+.login-container form section:nth-child(1) {
+  width: 100%;
+  height: 20%;
+}
+
+.login-container form section:nth-child(2) {
+  width: 100%;
+  height: 30%;
+}
+
+.login-container form section:nth-child(3) {
+  width: 100%;
+  height: 30%;
+}
+/*# sourceMappingURL=LoginForm.css.map */
