@@ -1,5 +1,20 @@
+//select html elements
+const loginForm = document.querySelector('.login-container > form');
 const spanText = document.querySelectorAll('.login-container > form > section > main > article > div > span');
 const inputText = document.querySelectorAll('.login-container > form > section > main > article > div > input');
+
+//==============================================================
+
+//form class
+var Form = function(){
+    this.ePreventDefault = function(e){
+        e.preventDefault();
+    }
+}
+
+//==============================================================
+
+//text class
 var Text = function(){
     let text = Array.from(spanText);
     this.sortText = function(){
@@ -19,15 +34,33 @@ var Text = function(){
         }
     }
 }
+//==============================================================
 
-var text = new Text();
-text.sortText();
+//init the login actions
+function initLoginForm(){
 
-for(let i = 0; i < inputText.length; i++){
-    inputText[i].addEventListener('input', function(){
-        text.erase(i);
-    });
-    inputText[i].addEventListener('input', function(){
-        text.update(i);
-    });
+    //instanciate text class
+    const text = new Text();
+    text.sortText();
+    
+    for(let i = 0; i < inputText.length; i++){
+        inputText[i].addEventListener('input', function(){
+            text.erase(i);
+        });
+        inputText[i].addEventListener('input', function(){
+            text.update(i);
+        });
+    }
+
+    //instanciate form class
+    const form = new Form();
+
+    function ePreventDefault(e){
+        form.ePreventDefault(e);
+    }
+    loginForm.addEventListener('submit', ePreventDefault);
+
 }
+initLoginForm();
+
+

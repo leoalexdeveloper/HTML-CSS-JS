@@ -1,6 +1,6 @@
 @font-face {
   font-family: login-button;
-  src: url("../FONTS/Oswald-VariableFont_wght.ttf") format("truetype");
+  src: url("../FONTS/Oswald-VariableFont_wght.ttf");
 }
 
 @font-face {
@@ -150,7 +150,7 @@
 }
 
 .login-container form section main article div {
-  width: 60%;
+  width: 70%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,9 +159,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -196,7 +196,7 @@
 }
 
 .login-container form section main article div input {
-  width: 100%;
+  width: 90%;
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,7 +223,7 @@
   font-variant: normal;
   color: #B0830B;
   background-color: transparent;
-  padding-left: 2%;
+  padding-left: 4%;
 }
 
 .login-container form section footer {
@@ -282,7 +282,7 @@
   border-top: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
   background-color: #E5E5E5;
-  font-family: login-input, sans-serif;
+  font-family: login-button, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   letter-spacing: 2px;
@@ -330,7 +330,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding-left: 2%;
-  font-family: login-input, sans-serif;
+  font-family: login-button, sans-serif;
   font-size: 0.8rem;
   font-weight: normal;
   letter-spacing: 2px;
@@ -340,7 +340,7 @@
 }
 
 .login-container form section footer article div span:nth-child(1) {
-  font-family: login-input, sans-serif;
+  font-family: login-button, sans-serif;
   font-size: 0.8rem;
   font-weight: normal;
   letter-spacing: 2px;
@@ -350,7 +350,7 @@
 }
 
 .login-container form section footer article div span:nth-child(2) {
-  font-family: login-input, sans-serif;
+  font-family: login-button, sans-serif;
   font-size: 0.8rem;
   font-weight: normal;
   letter-spacing: 2px;
@@ -377,5 +377,49 @@
 .login-container form section:nth-child(3) {
   width: 100%;
   height: 30%;
+}
+
+@media only screen and (max-width: 900px) {
+  .login-container form {
+    width: 250px;
+    height: 350px;
+  }
+  .login-container form section main article div span {
+    font-size: 1rem;
+  }
+  .login-container form section main article div input {
+    font-size: 1rem;
+  }
+  .login-container form section footer article input {
+    font-size: 1rem;
+  }
+  .login-container form section footer article div span:nth-child(1) {
+    font-size: 0.6rem;
+  }
+  .login-container form section footer article div span:nth-child(2) {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .login-container form {
+    width: 100vw;
+    height: 80vh;
+  }
+  .login-container form section main article div span {
+    font-size: 1.5rem;
+  }
+  .login-container form section main article div input {
+    font-size: 1.5rem;
+  }
+  .login-container form section footer article input {
+    font-size: 1.2rem;
+  }
+  .login-container form section footer article div span:nth-child(1) {
+    font-size: 1rem;
+  }
+  .login-container form section footer article div span:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=LoginForm.css.map */

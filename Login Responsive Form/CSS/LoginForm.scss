@@ -39,8 +39,8 @@
                 }
 
                 div{
-                    @include dimensions(60%, 100%);
-                    @include flex(row, center, center);
+                    @include dimensions(70%, 100%);
+                    @include flex(row, flex-start, center);
                     position:relative;
 
                     span{
@@ -52,7 +52,7 @@
                     }
 
                     input{
-                        @include dimensions(100%, 50%);
+                        @include dimensions(90%, 50%);
                         @include flex(row, center, center);
                         position:absolute;
                         border:none;
@@ -60,7 +60,7 @@
                         outline:none;
                         @include font(login-input, 1.2rem, normal, 2px, normal, normal, #B0830B);
                         background-color:transparent;
-                        padding-left:2%;
+                        padding-left:4%;
                     }
                 }
                 }
@@ -82,7 +82,7 @@
                             border-top:1px solid #E5E5E5;
                             border-bottom:1px solid #E5E5E5;
                             background-color:#E5E5E5;
-                            @include font(login-input, 1rem, normal, 2px, normal, normal, #229479);
+                            @include font(login-button, 1rem, normal, 2px, normal, normal, #229479);
                             cursor:pointer;
 
                             &:hover{
@@ -99,15 +99,15 @@
                                 
                             @include flex(column, center, center);
                             padding-left:2%;
-                            @include font(login-input, 0.8rem, normal, 2px, normal, normal, #229479);
+                            @include font(login-button, 0.8rem, normal, 2px, normal, normal, #229479);
                             }
 
                             span:nth-child(1){
-                                @include font(login-input, 0.8rem, normal, 2px, normal, normal, #E5E5E5);
+                                @include font(login-button, 0.8rem, normal, 2px, normal, normal, #E5E5E5);
                             }
 
                             span:nth-child(2){
-                                @include font(login-input, 0.8rem, normal, 2px, normal, normal, #E5E5E5);
+                                @include font(login-button, 0.8rem, normal, 2px, normal, normal, #E5E5E5);
                                 cursor:pointer;
 
                                 &:hover{
@@ -127,6 +127,92 @@
         }
         section:nth-child(3){
             @include dimensions(100%, 30%);
+        }
+    }
+}
+
+@media only screen and (max-width:900px){
+    .login-container{
+        form{
+            @include dimensions(250px, 350px);
+
+            section{
+                main{
+                    article{
+                        div{
+                            span{
+                                font-size:1rem;
+                            }
+
+                            input{
+                                font-size:1rem;
+                                
+                            }
+                        }
+                    }
+                }
+
+                footer{
+                    article{
+                        input{
+                            font-size:1rem;
+                        }
+                        div{
+                            span:nth-child(1){
+                            font-size:0.6rem;
+                            }
+
+                            span:nth-child(2){
+                            font-size:0.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:450px){
+    .login-container{
+        form{
+            @include dimensions(100vw, 80vh);
+
+            section{
+                main{
+                    article{
+                        div{
+                            span{
+                                font-size:1.5rem;
+                            }
+
+                            input{
+                                font-size:1.5rem;
+                                
+                            }
+                        }
+                    }
+                }
+
+                footer{
+                    article{
+                        input{
+                            font-size:1.2rem;
+                        }
+                        div{
+                            span:nth-child(1){
+                            
+                            font-size:1rem;
+                            }
+
+                            span:nth-child(2){
+                            
+                            font-size:1rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
