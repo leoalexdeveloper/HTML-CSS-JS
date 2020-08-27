@@ -51,9 +51,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(26, 26, 26, 0.8);
-  -webkit-box-shadow: 0px 0px 2.5px 1px black, inset 0px 0px 2.5px 1px white;
-          box-shadow: 0px 0px 2.5px 1px black, inset 0px 0px 2.5px 1px white;
+  background-color: rgba(54, 22, 94, 0.9);
+  -webkit-box-shadow: 0px 0px 2.5px 1px rgba(24, 24, 24, 0.8), inset 0px 0px 2.5px 1px #D1E3FF;
+          box-shadow: 0px 0px 2.5px 1px rgba(24, 24, 24, 0.8), inset 0px 0px 2.5px 1px #D1E3FF;
 }
 
 .login-container form section {
@@ -70,7 +70,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
 }
 
 .login-container form section header {
@@ -143,8 +142,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  -webkit-filter: invert(0.85);
+          filter: invert(0.85);
   -webkit-transform: scale(0.4);
           transform: scale(0.4);
 }
@@ -191,7 +190,7 @@
   letter-spacing: 2px;
   font-style: normal;
   font-variant: normal;
-  color: #229479;
+  color: #D1E3FF;
   margin-left: 4%;
 }
 
@@ -221,7 +220,7 @@
   letter-spacing: 2px;
   font-style: normal;
   font-variant: normal;
-  color: #B0830B;
+  color: #E4B63B;
   background-color: transparent;
   padding-left: 4%;
 }
@@ -281,7 +280,9 @@
   border: none;
   border-top: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
-  background-color: #E5E5E5;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(209, 227, 255, 0.2)), color-stop(20%, #d1e3ff), color-stop(80%, #d1e3ff), to(rgba(209, 227, 255, 0.2)));
+  background-image: linear-gradient(to right, rgba(209, 227, 255, 0.2) 0%, #d1e3ff 20%, #d1e3ff 80%, rgba(209, 227, 255, 0.2) 100%);
   font-family: login-button, sans-serif;
   font-size: 1rem;
   font-weight: normal;
@@ -293,8 +294,13 @@
 }
 
 .login-container form section footer article input:hover {
+  width: 105%;
+  height: 33%;
   background-color: #229479;
+  background-image: none;
   color: #E5E5E5;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 .login-container form section footer article div {
@@ -330,13 +336,6 @@
       -ms-flex-align: center;
           align-items: center;
   padding-left: 2%;
-  font-family: login-button, sans-serif;
-  font-size: 0.8rem;
-  font-weight: normal;
-  letter-spacing: 2px;
-  font-style: normal;
-  font-variant: normal;
-  color: #229479;
 }
 
 .login-container form section footer article div span:nth-child(1) {
@@ -346,7 +345,7 @@
   letter-spacing: 2px;
   font-style: normal;
   font-variant: normal;
-  color: #E5E5E5;
+  color: #D1E3FF;
 }
 
 .login-container form section footer article div span:nth-child(2) {
@@ -356,12 +355,12 @@
   letter-spacing: 2px;
   font-style: normal;
   font-variant: normal;
-  color: #E5E5E5;
+  color: #D1E3FF;
   cursor: pointer;
 }
 
 .login-container form section footer article div span:nth-child(2):hover {
-  color: #B0830B;
+  color: #E4B63B;
 }
 
 .login-container form section:nth-child(1) {

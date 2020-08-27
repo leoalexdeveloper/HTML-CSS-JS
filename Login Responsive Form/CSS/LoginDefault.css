@@ -1,0 +1,15 @@
+html {
+  font-size: 12pt;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../BACKGROUND/background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-backdrop-filter: blur(1px) invert(0);
+          backdrop-filter: blur(1px) invert(0);
+}
+/*# sourceMappingURL=LoginDefault.css.map */

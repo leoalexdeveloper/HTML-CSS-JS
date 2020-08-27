@@ -1,8 +1,11 @@
 @import "_face-font.scss";
 @import "_functions.scss";
 
-
-
+$formColor:rgba(54,22,94,0.9);
+$fontColorInput:#E4B63B;
+$fontColorText:#D1E3FF;
+$fontColorSpan:#E4B63B;
+$fontColorSpanText:#D1E3FF;
 .login-container{
     @include dimensions(100vw, 100vh);
     @include flex(column, center, center);
@@ -10,13 +13,13 @@
     form{
         @include dimensions(350px, 450px);
         @include flex(column, space-around, center);
-        background-color:rgba(26,26,26,0.8);
-        box-shadow:0px 0px 2.5px 1px black, inset 0px 0px 2.5px 1px white;
+        background-color:$formColor;
+        box-shadow:0px 0px 2.5px 1px rgba(24,24,24,0.8), inset 0px 0px 2.5px 1px #D1E3FF;
         
 
         section{
             @include flex(column, center, center);
-            overflow:hidden;
+            
 
             header{
                 @include dimensions(100%, 100%);
@@ -34,7 +37,7 @@
                 img{
                     @include dimensions(20%, 100%);
                     @include flex(column, center, center);
-                    filter:invert(1);
+                    filter:invert(0.85);
                     transform:scale(0.4);
                 }
 
@@ -47,7 +50,7 @@
                         @include dimensions(100%, 50%);
                         @include flex(row, flex-start, center);
                         position:absolute;
-                        @include font(login-input, 1.2rem, normal, 2px, normal, normal, #229479);
+                        @include font(login-input, 1.2rem, normal, 2px, normal, normal, $fontColorText);
                         margin-left:4%;
                     }
 
@@ -58,7 +61,7 @@
                         border:none;
                         border-bottom:1px solid #E5E5E5;
                         outline:none;
-                        @include font(login-input, 1.2rem, normal, 2px, normal, normal, #B0830B);
+                        @include font(login-input, 1.2rem, normal, 2px, normal, normal, $fontColorInput);
                         background-color:transparent;
                         padding-left:4%;
                     }
@@ -81,13 +84,21 @@
                             border:none;
                             border-top:1px solid #E5E5E5;
                             border-bottom:1px solid #E5E5E5;
-                            background-color:#E5E5E5;
+                            background-color:transparent;
+                            background-image:linear-gradient(to right, 
+                                rgba(209,227,255, 0.2)0%, 
+                                rgba(209,227,255, 1)20%,
+                                rgba(209,227,255, 1)80%,
+                                rgba(209,227,255, 0.2)100%);
                             @include font(login-button, 1rem, normal, 2px, normal, normal, #229479);
                             cursor:pointer;
 
                             &:hover{
+                                @include dimensions(105%, 33%);
                                 background-color:#229479;
+                                background-image:none; 
                                 color:#E5E5E5;
+                                transition:0.8s ease;
                             }
                         }
 
@@ -99,19 +110,18 @@
                                 
                             @include flex(column, center, center);
                             padding-left:2%;
-                            @include font(login-button, 0.8rem, normal, 2px, normal, normal, #229479);
                             }
 
                             span:nth-child(1){
-                                @include font(login-button, 0.8rem, normal, 2px, normal, normal, #E5E5E5);
+                                @include font(login-button, 0.8rem, normal, 2px, normal, normal, $fontColorSpanText);
                             }
 
                             span:nth-child(2){
-                                @include font(login-button, 0.8rem, normal, 2px, normal, normal, #E5E5E5);
+                                @include font(login-button, 0.8rem, normal, 2px, normal, normal, $fontColorSpanText);
                                 cursor:pointer;
 
                                 &:hover{
-                                    color:#B0830B;
+                                    color:$fontColorSpan;
                                 }
                             }
                         }

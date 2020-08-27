@@ -4,14 +4,3 @@
     box-sizing:border-box;
     animation-delay:0s;
 }
-
-body{
-    width:100vw;
-    height:100vh;
-    background-image:url('../BACKGROUND/backgroundBody.jpg');
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-    backdrop-filter:blur(2px) invert(0.8);
-    font-size:12pt;
-}

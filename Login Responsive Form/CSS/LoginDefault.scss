@@ -1,0 +1,9 @@
+@import "_functions.scss";
+html{
+    font-size:12pt;
+}
+
+body{
+    @include dimensions(100vw, 100vh);
+    @include background("../BACKGROUND/background.svg", cover, center, no-repeat, blur(1px) invert(0));
+}
