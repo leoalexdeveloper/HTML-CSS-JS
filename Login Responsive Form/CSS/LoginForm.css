@@ -291,6 +291,7 @@
   font-variant: normal;
   color: #229479;
   cursor: pointer;
+  outline: none;
 }
 
 .login-container form section footer article input:hover {
@@ -301,6 +302,7 @@
   color: #E5E5E5;
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
+  border-radius: 4px;
 }
 
 .login-container form section footer article div {

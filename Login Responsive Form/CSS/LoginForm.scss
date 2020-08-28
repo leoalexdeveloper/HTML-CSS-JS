@@ -92,13 +92,15 @@ $fontColorSpanText:#D1E3FF;
                                 rgba(209,227,255, 0.2)100%);
                             @include font(login-button, 1rem, normal, 2px, normal, normal, #229479);
                             cursor:pointer;
-
+                            outline:none;
+                            
                             &:hover{
                                 @include dimensions(105%, 33%);
                                 background-color:#229479;
                                 background-image:none; 
                                 color:#E5E5E5;
                                 transition:0.8s ease;
+                                border-radius:4px;
                             }
                         }
 

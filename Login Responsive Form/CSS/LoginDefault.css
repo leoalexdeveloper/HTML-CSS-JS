@@ -5,12 +5,12 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url("../BACKGROUND/backgroundBody2.jpg");
+  background-image: url("../BACKGROUND/backgroundBody.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-backdrop-filter: blur(1px) invert(0);
-          backdrop-filter: blur(1px) invert(0);
+  -webkit-backdrop-filter: blur(2px) invert(0);
+          backdrop-filter: blur(2px) invert(0);
 }
 
 .login-container {
@@ -18,7 +18,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-backdrop-filter: blur(1px) invert(0);
-          backdrop-filter: blur(1px) invert(0);
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
 }
 /*# sourceMappingURL=LoginDefault.css.map */
